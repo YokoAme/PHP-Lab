@@ -9,7 +9,7 @@ function square_sum($numbers) : int {
     }
     return $sum;
 }
-
+//
 function enough($cap, $on, $wait) {
   $available_space = $cap - $on; 
   if ($available_space >= $wait) {
@@ -17,7 +17,7 @@ function enough($cap, $on, $wait) {
   } else {
       return $wait - $available_space; }
 }
-
+//
 function removeEveryOther($array) {
   $result = [];
   for ($i = 0; $i < count($array); $i++) {
@@ -38,11 +38,11 @@ function multiples(int $m, float $n): array {
   }
   return $result;
 }
-
+//
 function disemvowel($string) {
   return preg_replace('/[aeiouAEIOU]/', '', $string);
 }
-
+//
 function square_digits(int $num): int {
   $digits = str_split((string)$num);
   $result = '';
@@ -76,7 +76,7 @@ function expandedForm(num) {
 
   return result.join(' + ');
 }
-
+//
 function expanded_form(int $n): string {
   $digits = str_split((string)$n);
   $length = count($digits);
@@ -90,7 +90,7 @@ function expanded_form(int $n): string {
 
   return implode(' + ', $result);
 }
-
+//
 function digitalRoot(n) {
   while (n >= 10) {
     n = n.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
